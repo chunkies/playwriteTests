@@ -13,7 +13,8 @@ on:
           - prod
 
 jobs:
-  test:
+  run-tests:
+    name: Run Playwright tests (Environment: ${{ github.event.inputs.environment }})
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
