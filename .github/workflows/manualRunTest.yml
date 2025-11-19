@@ -14,7 +14,7 @@ on:
 
 jobs:
   test:
-    name: ${{inputs.environment}}
+    name: run tests ${{inputs.environment}} 
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
